@@ -28,16 +28,23 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <finalName>spring-rest-new</finalName>  <!-- Custom JAR Name -->
+   <build>
+    <finalName>spring-rest-new</finalName>  <!-- Ensures JAR name -->
+    <plugins>
+        <!-- Spring Boot Plugin for Packaging -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>  <!-- Important for JAR generation -->
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 
-        <plugins>
-            <!-- Spring Boot Plugin -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
