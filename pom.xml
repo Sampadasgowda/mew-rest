@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.phase2</groupId>
-    <artifactId>spring-rest-simple</artifactId>
+    <artifactId>new-spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <!-- Spring Boot Parent -->
@@ -29,6 +29,8 @@
     </dependencies>
 
     <build>
+        <finalName>spring-rest-new</finalName>  <!-- Custom JAR Name -->
+
         <plugins>
             <!-- Spring Boot Plugin -->
             <plugin>
