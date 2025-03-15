@@ -28,7 +28,7 @@
         </dependency>
     </dependencies>
 
-    <build>
+   <build>
     <finalName>spring-rest-new</finalName>  <!-- Ensures JAR name -->
     <plugins>
         <!-- Spring Boot Plugin for Packaging -->
@@ -45,5 +45,6 @@
         </plugin>
     </plugins>
 </build>
+
 
 </project>
