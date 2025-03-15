@@ -2,49 +2,40 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.phase2</groupId>
-  <artifactId>spring-rest-simple</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+    <groupId>org.phase2</groupId>
+    <artifactId>spring-rest-simple</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
-  <!-- Spring Boot Parent -->
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.0</version>  <!-- Compatible with Java 17 -->
-    <relativePath/>
-  </parent>
-
-  <properties>
-    <java.version>17</java.version>  <!-- Java 17 Compatibility -->
-    <sonar.host.url>http://localhost:9000</sonar.host.url>
-    <sonar.token>squ_93f24908eee5ba903a22e325da0dfb578d22bc7c</sonar.token>
-  </properties>
-
-  <dependencies>
-    <!-- Spring Boot Web for REST APIs -->
-    <dependency>
+    <!-- Spring Boot Parent -->
+    <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-  </dependencies>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version>  <!-- Compatible with Java 17 -->
+        <relativePath/>
+    </parent>
 
-  <build>
-    <plugins>
-      <!-- Spring Boot Plugin -->
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
+    <properties>
+        <java.version>17</java.version>  <!-- Java 17 Compatibility -->
+    </properties>
 
-      <!-- SonarQube Plugin -->
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.11.0.3922</version>
-      </plugin>
-    </plugins>
-  </build>
+    <dependencies>
+        <!-- Spring Boot Web for REST APIs -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
