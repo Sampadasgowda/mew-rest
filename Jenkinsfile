@@ -11,7 +11,7 @@ pipeline {
         // Step 1: Checkout Code
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Sampadasgowda/mew-rest.git'
+                git branch: 'main', url: 'https://github.com/Sampadasgowda/mew-rest.git'
             }
         }
  
